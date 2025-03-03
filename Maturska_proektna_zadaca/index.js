@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
         aboutus.style.transition="1s"
         aboutus.style.opacity="100%"
         aboutus.style.translate="0%"
-        aboutImage.style.transition="3s"
+        aboutImage.style.transition="2s"
         aboutImage.style.translate="0%"
 
     }
