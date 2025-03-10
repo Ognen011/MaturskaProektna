@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,14 +22,12 @@
                 <li>Menu</li>
             </a><a href="#about">
                 <li>About Us</li>
-            </a><a href="#contact">
-                <li>Contact</li>
-            </a><a href="#">
-                <li>Sign Up</li>
             </a>
-            <a href="#">
+            <a href="#reservation">
                 <li>Reservation</li>
-            </a>
+            </a><a href="#contact">
+                <li>Contact</li></a>
+            
         </ul>
     </header>
     <section id="home" class="main">
@@ -37,8 +35,8 @@
             <h1>Restaurant Starlight</h1>
             <p>Indulge in exquisite flavors and unforgettable dining experiences,<br> crafted with passion and precision.</p>
             <div class="buttons">
-                <button class="reserve">Reserve now</button>
-                <button class="learn-more">Learn More</button>
+                <a href="#reserve"><button class="reserve">Reserve now</button></a>
+                <a href="#about"><button class="learn-more">Learn More</button></a>
             </div>
         </div>
     </section>
@@ -171,31 +169,52 @@
     </section>
     <img class="aboutImage" src="./images/Apetizers_smoked_salmon.jpg" alt="">
     </div>
- 
+    <section class="reservation" id="reservation">
+        <form>
+        <h1>Reserve Now</h1>
+        <div class="name-container">
+            <label for="name">Full Name:</label>
+            <input class="name" type="text" id="name" name="name" required>
+        </div>
+   
+        <div class="email-container">
+            <label for="email">Email:</label>
+            <input class="email" type="email" id="email" name="email" required>
+        </div>
+        <div class="phone-container">
+            <label for="phone">Phone Number:</label>
+            <input class="phone" type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="container">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+        
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+        </div>
+           
+        
+            <button class="reservenow" type="submit">Reserve Now</button>
+        </form>
+        
+    </section>
 
     <section class="Contact" id="contact">
-    <h1>Contact Us</h1>
         <div class="container">
             <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <button type="submit">Submit</button>
-            </form>
-    
+            <h3>Phone: +389 46 260 359</h3>
+            <h3>Email: <a href="mailto:StarlightRestaurant@gmail.com">StarlightRestaurant@gmail.com</a></h3>
             <div class="message">
                 <p>We'll get back to you as soon as possible. Thank you!</p>
             </div>
         </div>
     </section>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
